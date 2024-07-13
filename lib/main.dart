@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'examen',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 0, 140, 255)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 84, 2, 224)),
         useMaterial3: true,
       ),
       home: const LoginScreen(),
@@ -46,14 +46,12 @@ class PostListScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Lista de posts'),
       ),
-      backgroundColor: Colors.blueGrey[50],  // Cambiamos el color de fondo de la pantalla
+      backgroundColor: const Color.fromARGB(255, 241, 236, 236),  // Cambiamos el color de fondo de la pantalla
       //cargamos los post
       body: ListView.builder(
         itemCount: posts.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(posts[index].title),
-            tileColor: Colors.blue[100],  // Cambiamos el color de fondo de cada ListTile
+          return InkWell(
             onTap: () {
               Navigator.push(
                 context,
@@ -62,6 +60,10 @@ class PostListScreen extends StatelessWidget {
                 ),
               );
             },
+            child: ListTile(
+              title: Text(posts[index].title),
+              tileColor: const Color.fromARGB(255, 6, 58, 100),  // Cambiamos el color de fondo de cada ListTile
+            ),
           );
         },
       ),
