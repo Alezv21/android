@@ -5,7 +5,7 @@ import 'screens/login_screen.dart';
 void main() {
   runApp(const MyApp());
 }
-
+//main del proyecto
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

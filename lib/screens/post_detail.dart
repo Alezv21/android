@@ -5,7 +5,7 @@ class PostDetailScreen extends StatelessWidget {
   final Post post;
 
   const PostDetailScreen({super.key, required this.post});
-
+//la parte de detalles del post cuando se le clickea
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
       });
     }
   }
-
+//todo lo relacionado al login
   @override
   Widget build(BuildContext context) {
     return Scaffold(

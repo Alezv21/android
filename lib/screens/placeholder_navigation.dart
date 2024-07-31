@@ -9,13 +9,13 @@ class PlaceholderNavigation extends StatefulWidget {
   @override
   _PlaceholderNavigationState createState() => _PlaceholderNavigationState();
 }
-
+//agregamos el placeholder para usar mejor la funcionalidad de navegacion
 class _PlaceholderNavigationState extends State<PlaceholderNavigation> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
     PostListScreen(),
-    TodoScreen(),
+    TodoListScreen(), 
     ProfileScreen(),
   ];
 
